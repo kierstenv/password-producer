@@ -65,19 +65,23 @@ const passwordCharPrompt = () => {
   }
 };
 
-passwordLengthPrompt();
-
-passwordCharPrompt();
-
 const generatePassword = () => {
+  generatedPassword.splice(0);
+  
   while (passwordCrit.length > 0) {
     generatedPassword.push(passCharList[randomInteger(0, passCharList.length)]);
     
     passwordCrit.length--;
   }
+  
+  passwordCrit.length = generatedPassword.length;
 
   return generatedPassword.join('');
 };
+
+passwordLengthPrompt();
+
+passwordCharPrompt();
 
 // Get references to the #generate element
 const generateBtn = document.querySelector("#generate");
