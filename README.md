@@ -12,7 +12,7 @@ No installation is required for this application.
 
 ## Usage
 
-Access the application [here](https://kierstenv.github.io/password-generator/).
+Access the application [here](https://kierstenv.github.io/password-producer/).
 1. Choose a password length. (*must be 8–128 characters*)
 2. Choose which character types to include in the password:
     - lowercase, uppercase, numeric, and/or special characters (***must choose at least one***)
